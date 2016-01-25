@@ -11,10 +11,10 @@ public class User {
 
     private final List<String> args = new ArrayList<String>();
 
-    public User(String email, ResultSet rs, int count) throws SQLException {
+    public User(String email, ResultSet rs, int columns) throws SQLException {
         this.email = email;
 
-        for (int index = 1; index < count; index++)
+        for (int index = 1; index <= columns; index++)
             args.add(rs.getString(index));
     }
 

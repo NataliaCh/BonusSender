@@ -20,7 +20,7 @@ public class MessageToUser {
     }
 
     public String createHtml() throws IOException {
-        File io = new File("D:\\Education\\BonusSender\\rootPack\\template.html");
+        File io = new File("D:\\Education\\IdeaProjects\\BonusSender\\rootPack\\template.html ");
         try {
             Object[] args = user.toArgs().toArray();
             return MessageFormat.format(FileUtils.readFileToString(io), args);

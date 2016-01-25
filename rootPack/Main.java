@@ -41,7 +41,7 @@ public class Main {
         while (rs.next()) {
             String maybeEmail = rs.getString(1);
             if (maybeEmail != null && maybeEmail.trim().length() > 0) {
-                users.add(new User(maybeEmail, rs, 22));
+                users.add(new User(maybeEmail, rs, 20));
             }
         }
         return users;
